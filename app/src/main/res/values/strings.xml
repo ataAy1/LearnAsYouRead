@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HikayeIng</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="correct_answer">Correct !</string>
+    <string name="wrong_answer">Wrong !fragment</string>
+    <string name="congratulations_message">Congratulations, all questions are answered!</string>
+</resources>

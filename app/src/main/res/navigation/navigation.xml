@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/storiesListFragment">
+
+    <fragment
+        android:id="@+id/textRecognitionStoryFragment"
+        android:name="com.learnasyouread.stories.ui.fragment.TextRecognitionStoryFragment"
+        android:label="fragment_story_image_to_text"
+        tools:layout="@layout/fragment_story_image_to_text" />
+    <fragment
+        android:id="@+id/savedWordsFragment"
+        android:name="com.learnasyouread.stories.ui.fragment.SavedWordsFragment"
+        android:label="fragment_saved_words"
+        tools:layout="@layout/fragment_saved_words" />
+    <fragment
+        android:id="@+id/storiesListFragment"
+        android:name="com.learnasyouread.stories.ui.fragment.StoriesListFragment"
+        android:label="fragment_story_list"
+        tools:layout="@layout/fragment_story_list" >
+        <action
+            android:id="@+id/action_storiesListFragment_to_savedWordsFragment"
+            app:destination="@id/savedWordsFragment" />
+        <action
+            android:id="@+id/action_storiesListFragment_to_textRecognitionStoryFragment"
+            app:destination="@id/textRecognitionStoryFragment" />
+        <action
+            android:id="@+id/action_storiesListFragment_to_storyReadFragment"
+            app:destination="@id/storyReadFragment" />
+        <action
+            android:id="@+id/action_storiesListFragment_to_textListOCRFragment"
+            app:destination="@id/textListOCRFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/storyReadFragment"
+        android:name="com.learnasyouread.stories.ui.fragment.StoryReadFragment"
+        android:label="fragment_read_story"
+        tools:layout="@layout/fragment_read_story" >
+        <action
+            android:id="@+id/action_storyReadFragment_to_storyQuestionsFragment"
+            app:destination="@id/storyQuestionsFragment" />
+        <argument
+            android:name="selectedStory"
+            app:argType="com.learnasyouread.stories.data.entity.StoriesEntity" />
+        <action
+            android:id="@+id/action_storyReadFragment_to_storyQuestionsFragment2"
+            app:destination="@id/storyQuestionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/storyQuestionsFragment"
+        android:name="com.learnasyouread.stories.ui.fragment.StoryQuestionsFragment"
+        android:label="StoryQuestionsFragment" >
+        <argument
+            android:name="storyID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/textDetailFragment"
+        android:name="com.learnasyouread.stories.ui.fragment.TextDetailFragment"
+        android:label="fragment_text_detail"
+        tools:layout="@layout/fragment_text_detail" >
+        <argument
+            android:name="selectedOCR"
+            app:argType="com.learnasyouread.stories.data.entity.TextOcrProcessorEntity" />
+    </fragment>
+    <fragment
+        android:id="@+id/textListOCRFragment"
+        android:name="com.learnasyouread.stories.ui.fragment.TextListOCRFragment"
+        android:label="fragment_text_list_ocr"
+        tools:layout="@layout/fragment_text_list_ocr" >
+        <action
+            android:id="@+id/action_textListOCRFragment_to_textDetailFragment"
+            app:destination="@id/textDetailFragment" />
+    </fragment>
+</navigation>

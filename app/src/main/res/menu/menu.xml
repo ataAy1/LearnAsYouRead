@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/storiesListFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/textListOCRFragment"
+        android:icon="@drawable/baseline_library_books_24"
+        android:title="Texts" />
+    <item
+        android:id="@+id/textRecognitionStoryFragment"
+        android:icon="@drawable/ocr_icon"
+        android:title="Scan" />
+    <item
+        android:id="@+id/savedWordsFragment"
+        android:icon="@drawable/words_icon"
+        android:title="Words" />
+</menu>

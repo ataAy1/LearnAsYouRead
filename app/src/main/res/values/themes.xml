@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HikayeIng"  parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/burlyWood</item>
+        <!-- Add more customizations here -->
+    </style>
+
+    <style name="Theme.HikayeIng" parent="Base.Theme.HikayeIng" />
+</resources>
+
+
+    <!--
+
+
+    <resources xmlns:tools="http://schemas.android.com/tools">
+         Base application theme.
+    <style name="Base.Theme.HikayeIng"  parent="Theme.MaterialComponents.Light.NoActionBar">
+    Customize your light theme here.
+     <item name="colorPrimary">@color/my_light_primary</item>
+    </style>
+
+
+    <style name="Theme.HikayeIng" parent="Base.Theme.HikayeIng" />
+        </resources>
+        -->

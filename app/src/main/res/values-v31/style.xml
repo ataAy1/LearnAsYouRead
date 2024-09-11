@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.StartApp" parent="Theme.SplashScreen">
+        <item name="android:windowSplashScreenBackground">@color/burlyWood</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.HikayeIng</item>
+        <item name="android:windowSplashScreenAnimationDuration">3000</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/drawable_splash</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/burlyWood</item>
+        <item name="splashScreenIconSize">@dimen/dp_100</item>
+
+
+    </style>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.TextRecognitionStoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00ACC1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title=" "
+        app:titleMarginStart="15dp"
+        app:titleTextColor="@color/azure">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Text Scanning"
+            android:textColor="@color/alice_blue"
+            android:textSize="20dp"
+            android:textStyle="italic"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageCamera"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/camera_img"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/imageGallery"
+        app:layout_constraintTop_toTopOf="@+id/imageGallery" />
+
+    <ImageView
+        android:id="@+id/imageGallery"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/galeri_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/textViewContent"
+        android:layout_width="match_parent"
+        android:layout_height="411dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="11dp"
+        android:backgroundTint="#F44336"
+        android:gravity="center|top"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="20dp"
+        android:hint="Text"
+        android:text=""
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/saveBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/textViewTitle"
+        android:layout_width="268dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4CAF50"
+        android:hint="Title"
+        android:shadowColor="#B71C1C"
+        android:text=""
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfoCamera" />
+
+    <com.dd.morphingbutton.MorphingButton
+        android:id="@+id/saveBtn"
+        android:layout_width="220dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="44dp"
+        android:background="@color/coral"
+        android:text="SAVE"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContent" />
+
+    <TextView
+        android:id="@+id/textViewInfoCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Camera"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageCamera"
+        app:layout_constraintStart_toStartOf="@+id/imageCamera"
+        app:layout_constraintTop_toBottomOf="@+id/imageCamera" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Gallery"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageGallery"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="@+id/imageGallery"
+        app:layout_constraintTop_toBottomOf="@+id/imageGallery" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

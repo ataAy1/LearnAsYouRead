@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_forward"
+        android:icon="@drawable/question_page_arrow"
+        android:title="Forward"
+        app:showAsAction="ifRoom"
+        android:visible="true" />
+</menu>
