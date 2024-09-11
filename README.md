@@ -14,17 +14,16 @@ Personalize your experience by uploading your own text using your camera or gall
 - RxJava
 - CameraX
 - UCrop
-- Firebase Crashlytics
 - Material Components
 - XML
 - Serialization
 - SplashScreen
   
-## Installation
+## ⬇️ Installation
 [![Google_Play_Badge](https://github.com/user-attachments/assets/aaa0292e-fb43-41a9-b0b6-e2ca64b25be8)](https://play.google.com/store/apps/details?id=com.learnasyouread.hikayeing)
 
 ## 📸 Screenshots
-![New Image](docs/O70mkIQnECYI_1024_500.png)
+![New Image](docs/Rq49iMgw94xd_1024_500.png)
 
 <div style="text-align: center;">
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
@@ -36,6 +35,3 @@ Personalize your experience by uploading your own text using your camera or gall
     <img src="/docs/6.png" alt="Screenshot 6" width="250" height="540"/> 
   </div>
 </div>
-
-## 📸 Video 
-
